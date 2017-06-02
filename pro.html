@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+ <html>
+   <head><meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+   <style>
+/*.popover-title {
+      background-color:black; 
+      color: #FFFFFF; 
+      font-size: 20px;
+      text-align:center;
+  }*/
+  
+  .popover-content {
+      background-color:black;
+      color:white;
+	font-size: 20px;
+     
+  }
+.bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #fff; /* White */
+      color: #555555;
+  }
+a:link {
+    color:black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}*/
+/* a:hover {
+    color: darkblue;
+    background-color: transparent;
+    text-decoration: underline;
+}*/
+/* a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}*/
+ #header {
+                background-color:#eeeeee;
+    		color:black;
+    		text-align:right;
+    		padding:0.02px;
+		
+       }
+#header2 {
+                background-color:white;
+    		color:black;
+    		display:inline;
+		clear:none;
+    		padding:0.01px;
+		font-size:5px;
+       }
+#header3 {
+    background-color:brown;
+    color:white;
+    text-align:center;
+    padding:.5px;
+	font-size:20px;
+	-webkit-animation: mymove 2s infinite; 
+    animation: mymove 2s infinite;
+	background-image: url("i.jpg");
+    background-color: #cccccc;
+	background-repeat:no-repeat;
+	background-size: 2000px 100px;
+	
+}
+
+#log{line-height:15px;
+     background-color:#eeeeee;
+    height:200px;
+    width:100px;
+    float:left;
+    padding:1px;
+}
+
+#nav{
+    line-height:35px;
+    background-color:#eeeeee;
+    height:450px;
+    width:100px;
+    float:left;
+    padding:5px;
+    font-size:15px;	      
+}
+#section {
+    width:350px;
+    height:500px;
+    float:left;
+	background-color:white;
+    padding:10px;
+	color:black;
+	font-size:20px;
+	
+}
+#section3 {
+    width:539px;
+    height:500px;
+    float:left;
+	background-color:white;
+    padding:10px;
+	color:black;
+	font-size:20px;
+	
+}
+#section1 {
+    width:100%;
+    float:left;
+    padding:250px;
+	color:red;
+	font-size:20px;
+	background-image:url("co.jpg");
+	background-repeat:no-repeat;
+	background-size: 2000px 500px;
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+div.img a:hover img {
+     
+	
+}
+div.img {
+    
+    padding: 0px;
+    
+    height: auto;
+    width:60%;
+    float: left;
+    text-align: center;
+     background-color:white;
+	
+}	
+div.img1 a:hover img {
+    
+	
+}
+div.img1 {
+    
+    padding: 0px;
+    
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+     background-color:white;
+	
+}	
+
+div.desc {
+  text-align: center;
+  font-weight: normal;
+  width: 120px;
+  margin: 5px;
+}
+body  {
+    background-image: url("back.jpg");
+    background-color:white;
+	background-repeat:no-repeat;
+	background-size: 1500px 800px;
+}
+#section2 {
+	 width:350px;
+    float:left;
+	background-color:white;
+    padding:10px;
+	color:black;
+	font-size:20px;
+}
+    </style>
+    </head>
+    <body>
+	<div id="header">
+	<p style="word-spacing:10px;"><a href="form.html" target="blank"> sign Up</a> <a href="form1.html" target="blank" >log In </a> </p>
+	
+	</div>
+	<div id="header2" >
+	<h3 style="word-spacing:30px;"><a href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="New Mobiles  Tablets ">PRODUCTS</a> <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Memory  Battrey  Camera">FEATURES</a><a href="#"  data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Contact No  Email"> HELP</a><a href="#"  data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Prepaid  POstpaid"> PLANS</a><a href="#"  data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Rotating Mobiles  "> PHOTOS</a><a href="#"  data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Content njlgnoo ofbioi"> TWITTER</a><a href="#"  data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Write about us"> BLOG</a><a href"#" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Google Yahoo"> RESOURCECENTER</a> <button disabled>MOBILE</button></h3>
+        </div>
+	<div id="header3" onclick="changecolor()">
+<h1>Mobile Gallery</h1>
+</div>
+
+<div id="nav" onmouseenter="div3()" >
+<a href="samsung2.html" id="1" " >SAMSUNG</a><br>
+<a href="micromax.html" id="1" >MICROMAX<br>
+<a href="nokia.html" id="1" >NOKIA<br>
+<a href="samsung.html" id="1" >LENOVO<br>
+<a href="motorola.html" id="1" >MOTOROLA<br>
+<a href="samsung.html" id="1" >REDMI<br>
+<a href="samsung.html" id="1" >APPLE<br>
+<a href="samsung.html" id="1" >ONEplusTWO<br>
+<a href="samsung.html" id="1" ">LG<br>
+<a href="samsung.html" id="1" >NEXSUS<br>
+<a href="samsung.html" id="1" >SAMSUNG<br>
+<a href="samsung.html" id="1" >HTC<br>
+<a href="samsung.html" id="1" >MICROMAX<br>
+</div><br>
+
+<div id="section">
+<h2>Mobiles</h2>
+<p>
+Mobile phones have changed the way we live our lives and to many, the prospect of a world without voice calling, text messaging and mobile Internet access is an unsettling one. As we all know, mobile phones didn’t just happen overnight. They grew up, just like us.
+</p>
+</div>
+
+<div class="img">
+ <img src="go.jpg"/>
+ </div>
+
+<br>
+<div class="container">
+  <div class="jumbotron">
+    <h1><!..My first..> Why Mobile Gallery!</h1>      
+    <p>Just one click will lead you directly to your door!!</p>      
+    <a href="#" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-search"></span> Search</a>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <p>"Mobile Gallery's platform was easy to use, and provided us with the tools we needed to accomplish all our mobile web design goals. Our clients are very happy with the final product and have great things to say about their new mobile site."
+
+</p>
+    </div>
+    <div class="col-md-3">        
+      <p>The world's first mobile phone call was made on April 3, 1973, when Martin Cooper, a senior engineer at Motorola, called a rival telecommunications company and informed them he was speaking via a mobile phone.</p>      
+    </div>
+    <div class="col-md-3">        
+      <p>In 1983, the first mobile phones went on sale in the U.S. at almost $4,000 each.
+Over 250 million Nokia 1100 devices were sold, making it the bestselling electrical gadget in history.
+More People In The World Have Mobile Phones Than Toilets.
+So many Facebook photos and videos are uploaded via mobile that it takes up 27% of upstream web traffic.
+The technology behind smartphones relies on up to 250,000 separate patents.
+The average person unlocks his or her smartphone 110 times each day.</p>      
+    </div>
+    <div class="col-md-3">        
+      <p>In 1965, Bulgarian company "Radioelektronika" presented on the Inforga-65 international exhibition in Moscow the mobile automatic phone combined with a base station. Solutions of this phone were based on a system developed by Leonid Kupriyanovich. One base station, connected to one telephone wire line, could serve up to 15 customers.</strong></p>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="img">
+ <img id="image" onmouseenter="change()"  onmouseout="change1()"  src="go.jpg"/>
+ </div>
+<div id="section3">
+<h2>Know More About ANDROID Phones</h2>
+<p>
+Almost three years after the birth of the T-Mobile G1, the world's first Android smartphone, we pause to take a look back at what the little green dude has given us. Sure, we've known that the OS has been very busy in the United States and around the world, but we really had no idea just how busy it was. And if we expanded the list beyond handsets not with U.S. carriers, it would be even longer.
+</p>
+</div>
+<br>
+<div class="container-fluid bg-1 text-center">
+  <h3>What Is The History Of Mobile</h3>
+  <img src="goo.jpg" class="img-circle" alt="Bird" width="350" height="350">
+  <h3>Here You Go  <a href="https://en.wikipedia.org/wiki/History_of_mobile_phones">History</a></h3>
+</div>
+
+<div class="container-fluid bg-2 text-center">
+  <h3>Begining!!</h3>
+  <p>The transmission of speech by radio has a long and varied history going back to Reginald Fessenden's invention and shore-to-ship demonstration of radio telephony.</p>
+</div>
+
+<div class="container-fluid bg-3 text-center">
+  <h3>Where To Find Me?</h3>
+  <p>Before the devices that are now referred to as mobile phones existed, there were some precursors. In 1908 a Professor Albert Jahnke and the Oakland Transcontinental Aerial Telephone and Power Company claimed to have developed a wireless telephone.</p>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+
+
+
+function change()
+{
+image.src = "go1.jpg";
+
+}
+function change1()
+{
+image.src = "go.jpg";
+
+}
+
+
+</script>
+    </body>
+ </html>
+<br>
+>

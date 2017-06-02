@@ -1,0 +1,86 @@
+#title     { font-family : Franklin Gothic;
+                           color : black;
+                           text-align : center;
+                           font-size: 40px;
+                           font-style : bold;}
+
+#p      {  font-family : Gabriola;
+                           color : black;
+                           text-align : right;
+                           font-size: 20px;
+                           font-style : bold;}
+
+
+header 
+{
+
+    background: url(" ") repeat scroll left top #fff;
+
+    border-bottom:2px solid white;
+
+    position: relative;
+
+    z-index: 10;
+
+}
+nav 
+{
+
+    background-color:white;
+
+    overflow: hidden;
+
+}
+nav ul 
+{
+
+    margin: 1;
+
+    padding: 1;
+
+}
+nav ul li 
+{
+    display:inline;
+    float: left;
+
+}
+nav ul li a 
+{
+
+    color: black;
+
+    display: block;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    height: 20px;
+
+    line-height: 20px;
+
+    padding: 4px 10px 4px 11px;
+
+    position: relative;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+}
+nav ul li a:hover
+ {
+
+    background: none repeat scroll 0 0 red;
+
+}
+
+                
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img { width: 70%;
+                                                               margin: auto;
+                                                             }
+        
+
+
